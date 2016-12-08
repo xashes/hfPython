@@ -11,3 +11,7 @@ def sanitize(time_string):
     else:
         return time_string
     return time_string.replace(splitter, '.')
+
+def test_sanitize():
+    assert sanitize('2:38') == '2.38'
+    assert sanitize('2-38') == '2.38'
