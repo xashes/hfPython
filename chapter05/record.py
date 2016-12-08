@@ -1,5 +1,13 @@
-with open('julie.txt') as fh:
-    julie_records = fh.readline().strip().split(',')
+# def get_data(athlete):
+    # with open('{}.txt'.format(athlete)) as fh:
+        # records = fh.readline().strip().split(',')
+    # return records
 
-julie = sorted(julie_records)
-print(julie)
+def sanitize(time_string):
+    if ':' in time_string:
+        splitter = ':'
+    elif '-' in time_string:
+        splitter = '-'
+    else:
+        return time_string
+    return time_string.replace(splitter, '.')
