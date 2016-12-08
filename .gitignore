@@ -1,0 +1,4 @@
+nester/__pycache__/
+nester/dist/nester-1.1.0.tar.gz
+nester/build/
+*.pickle

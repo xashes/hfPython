@@ -1,0 +1,22 @@
+Man: line0
+Other Man: line1
+Man: line2
+Other Man: line3
+Man: line4
+Other Man: line5
+Man: line6
+Other Man: line7
+Man: line8
+Other Man: line9
+Man: line10
+Other Man: line11
+Man: line12
+Other Man: line13
+(pause)
+Man: line14
+Other Man: line15
+Man: line16
+Other Man: line17
+(pause)
+Man: line18
+Other Man: line19: the last line

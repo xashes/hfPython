@@ -8,13 +8,18 @@ MOVIES = [
     ]
 ]
 
-def lol_print(lol):
+import sys
+
+def lol_print(lol, indent=False, level=0, output=sys.stdout):
     """Function docstring"""
     for item in lol:
         if isinstance(item, list):
-            lol_print(item)
+            lol_print(item, indent, level+1, output)
         else:
-            print(item)
+            if indent:
+                print("\t"*level, end='', file=output)
+            print(item, file=output)
+
 
 if __name__ == '__main__':
-    lol_print(MOVIES)
+    lol_print(MOVIES, 1)
